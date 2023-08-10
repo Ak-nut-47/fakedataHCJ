@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="filters">
+          <h2>Filters</h2>
+          <label>Filter by Product:</label>
+          <input type="checkbox" id="fishCheckbox" value="Fish" />
+          <label for="fishCheckbox">Fish</label>
+          <input type="checkbox" id="mouseCheckbox" value="Mouse" />
+          <label for="mouseCheckbox">Mouse</label>
+          <input type="checkbox" id="cheeseCheckbox" value="Cheese" />
+          <label for="cheeseCheckbox">Cheese</label>
+        </div>
+        <div class="sort">
+          <h2>Sort</h2>
+          <select id="sortSelect">
+            <option value="">Sort by Price</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </div>
+      </aside>
+      <div class="product-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
